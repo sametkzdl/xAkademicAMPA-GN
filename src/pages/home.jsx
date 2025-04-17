@@ -228,7 +228,6 @@ const Home = () => {
       id.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   const data = [
     {
       order: "1.Gün -",
