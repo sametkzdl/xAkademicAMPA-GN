@@ -10,7 +10,7 @@ const Wrap = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 48px;
+  font-size: 54px;
   margin: 0;
   animation: fadeInDown 0.6s ease-in-out both;
 
@@ -32,13 +32,15 @@ const Title = styled.h2`
 
 const Container = styled.div`
   display: flex;
-  gap: 50px;
-  margin: 100px 0px 200px 0;
+  gap: 120px;
+  margin: 150px 0px 200px 0;
   align-items: center;
   justify-content: center;
 
   @media (max-width: 1250px) {
     flex-direction: column;
+    gap: 50px;
+    margin-top: 40px;
   }
 `;
 
