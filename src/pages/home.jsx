@@ -10,12 +10,15 @@ const Wrap = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 54px;
+  font-size: ${({ $second }) => ($second ? "48px" : "64px")};
   margin: 0;
   animation: fadeInDown 0.6s ease-in-out both;
+  font-family: "Poppins", sans-serif;
+  line-height: 64px;
 
   @media (max-width: 440px) {
     font-size: 36px;
+    line-height: 36px;
   }
 
   @keyframes fadeInDown {
@@ -48,7 +51,7 @@ const WrapImg = styled.div`
   animation: fadeInRight 0.8s ease-in-out both;
 
   > img {
-    width: 600px;
+    width: 500px;
     aspect-ratio: 5/3;
     border-radius: 35px;
     box-shadow: 20px 20px 50px 30px #1e3fb9;
@@ -79,7 +82,7 @@ const WrapImg = styled.div`
 `;
 
 const Button = styled.button`
-  padding: 15px 24px;
+  padding: 18px 24px;
   background: linear-gradient(#80e5f0, #fff);
   border: none;
   border-radius: 30px;
@@ -114,7 +117,7 @@ const Button = styled.button`
 `;
 
 const Button2 = styled.button`
-  padding: 15px 24px;
+  padding: 18px 24px;
   background: linear-gradient(#260f69, #1e41ba);
   border: none;
   border-radius: 30px;
@@ -293,6 +296,7 @@ const Home = () => {
               gap: "30px",
               flexWrap: "wrap",
               justifyContent: "center",
+              marginBlock: "18px",
             }}
           >
             <Button onClick={handleJoinClick}>Kampa Katıl</Button>
@@ -305,11 +309,16 @@ const Home = () => {
         </WrapImg>
       </Container>
       <Detail1 id="detail">
-        <Title style={{ color: "#36B7FF" }}>
+        <Title $second={true} style={{ color: "#36B7FF" }}>
           Kamp Başlangıç Tarihi: 25 Nisan 2025
         </Title>
         <span
-          style={{ color: "#36B7FF", marginBottom: "20px", display: "block" }}
+          style={{
+            color: "#36B7FF",
+            marginBottom: "20px",
+            marginTop: "15px",
+            display: "block",
+          }}
         >
           Kamp her gün saat 20:00 - 21:00 arası online olarak gerçekleşecektir.
         </span>
