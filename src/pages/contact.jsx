@@ -247,7 +247,7 @@ const Contact = () => {
               <strong>IBAN:</strong> TR470020500009728730500004
             </InfoText>
           </AccountDetails>
-          <RemainingSlot>KALAN KONTENJAN: 17 / 21</RemainingSlot>
+          <RemainingSlot>KALAN KONTENJAN: 5 / 21</RemainingSlot>
         </InfoSection>
       </ContentContainer>
 
