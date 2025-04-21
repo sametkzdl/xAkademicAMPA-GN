@@ -50,7 +50,7 @@ const Container = styled.div`
 const WrapImg = styled.div`
   animation: fadeInRight 0.8s ease-in-out both;
 
-  > img {
+  > iframe {
     width: 500px;
     aspect-ratio: 5/3;
     border-radius: 35px;
@@ -58,13 +58,13 @@ const WrapImg = styled.div`
   }
 
   @media (max-width: 1250px) {
-    > img {
+    > iframe {
       width: 400px;
     }
   }
 
   @media (max-width: 440px) {
-    > img {
+    > iframe {
       width: 300px;
     }
   }
@@ -305,7 +305,16 @@ const Home = () => {
           <span>*Kamp ücreti 1000₺’dir.</span>
         </div>
         <WrapImg>
-          <img src={banner} />
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_2wsGwISBgQ?si=GLOnn1TaP7ctsU6I"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </WrapImg>
       </Container>
       <Detail1 id="detail">
